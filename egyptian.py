@@ -24,18 +24,24 @@ def egyptian_multiplication(a, n):
     else:
         return egyptian_multiplication(a + a, n // 2)
 
-
+def power(a, n):
+    """
+    computes the power a ** n
+    assume n is a nonegative integer
+    use the recurssion to call egyptian_multiplication function
+    
+    """
+    
+    if n > 1:
+        return egyptian_multiplication(a, power(a, n - 1))
+    else:
+        return a
+    
 if __name__ == '__main__':
     # this code runs when executed as a script
     for a in [1,2,3]:
         for n in [1,2,5,10]:
             print("{} * {} = {}".format(a, n, egyptian_multiplication(a,n)))
+            # Test the power function result 
+            print("{} ** {} = {}".format(a, n, power(a,n)))
 
-
-def power(a, n):
-    """
-    computes the power a ** n
-
-    assume n is a nonegative integer
-    """
-    pass

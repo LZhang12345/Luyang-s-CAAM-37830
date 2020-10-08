@@ -10,3 +10,11 @@ Print answers to the following
 7. What is something you would like to learn in this course?
 8. Do you have any questions or concerns you would like to share?
 """
+answer = ['Luyang Zhang', 'MCAM program, first year',  
+          'Stochastic Process, Optimization, Machine Learning, and Mathmatical Finance ',
+          'Python, C++', 'UTC -5', 
+          'The optimized algo, computational model, and machine learning', 
+          'Could there be more object programming materials and more research-like introductions?']
+
+for i in answer:
+    print(i)
